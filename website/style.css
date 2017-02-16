@@ -17,6 +17,9 @@ header {
   padding: 1rem;
 }
 
+.main {padding: 16px;
+      width:100% ;}
+
 h1 {text-align: center;}
 
 h2 {color: #4d4d4d;
@@ -39,6 +42,21 @@ img {
   margin-left: auto;
   margin-right: auto;
   } 
+
+ul {list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e5ffe5}
+
+ul li {float: center;}
+li a {display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;}
+a:hover:not(.active) {background-color: #111}
+.active {background-color: #4caf50;}
 
 p {font-family: 'Century Gothic',CenturyGothic,AppleGothic,sans-serif;
   font-size: 50%;
@@ -112,12 +130,43 @@ li {font-family: 'Century Gothic',CenturyGothic,AppleGothic,sans-serif;
 }
 
 
-@media (min-width: 56.25rem) {
-  body {
-    background-color: #F0F0F0;
-  }
+/*GRID */
 
-  header {
-    background-color: #F0F0F0;
+.row {
+  overflow: auto;
+  margin-bottom: 16px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+  border: 1px;
+  padding: 16px;
+  width: 100%;
+}
+
+@media screen and (min-width: 37.5) {
+  [class*="col-"] {
+    background-color: rgba(242, 33, 56, 0.2);
+    border: 1px solid rgba(249, 38, 114, 1);
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  [class*="col-"] {
+    float: left;
   }
 }
