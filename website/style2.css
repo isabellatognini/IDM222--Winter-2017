@@ -17,7 +17,7 @@ ul {list-style-type: none;
     overflow: hidden;
     background-color: #e5ffe5}
 
-ul li {float: center;}
+
 li a {display: block;
       color: white;
       text-align: center;
@@ -42,7 +42,7 @@ a:hover:not(.active) {background-color: #111}
 }
 
 .main {
-	text-align: center
+	text-align: center;
 	margin: 0 auto;}
 
 
