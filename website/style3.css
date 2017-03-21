@@ -43,10 +43,9 @@ align-items: center;
 	margin:0 auto;
 	justify-content: space-around;
 	background-color: #e5ffe5;
-
 	-webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
-  padding: 0;
+  	flex-flow: column wrap;
+  	padding: 0;
 }
 .flex-container ul {
 	display: flex;
@@ -64,12 +63,11 @@ align-items: center;
 	
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 550px) {
   .flex-container {
    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
 
-    justify-content: space-around;
   }
 @media all and (min-width: 500px) {
 .header {flex-wrap: wrap;}
