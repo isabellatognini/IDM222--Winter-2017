@@ -43,9 +43,8 @@ align-items: center;
 	margin:0 auto;
 	justify-content: space-around;
 	background-color: #e5ffe5;
-	-webkit-flex-flow: column wrap;
-  	flex-flow: column wrap;
-  	padding: 0;
+
+	flex-direction: column;
 }
 .flex-container ul {
 	display: flex;
@@ -54,6 +53,7 @@ align-items: center;
 	padding: 0;
 	line-height: 5;
 	
+	flex-direction: column;
 	}
 
 .flex-container ul li a{
@@ -65,11 +65,9 @@ align-items: center;
 
 @media all and (min-width: 550px) {
   .flex-container {
-   -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-
-  }
-@media all and (min-width: 500px) {
+    flex-direction: row;
+}
+@media all and (min-width: 550px) {
 .header {flex-wrap: wrap;}
 
 
@@ -93,6 +91,18 @@ p {text-align: center;}
 
 .parentthree {background-color: green}
 
+.wrapper-image {
+    float: left; 
+    margin: 20px 20px 20px 270px;
+}
+
+.wrapper-aboutme {
+	float: right;
+	text-align: center;
+	max-width: 500px;
+	margin: 20px 270px 20px 20px;
+}
+@media all and (min-width: 550px) {
 
 
 
