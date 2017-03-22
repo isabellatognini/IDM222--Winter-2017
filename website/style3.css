@@ -74,7 +74,13 @@ align-items: center;
 @media all and (max-width: 600px) {
  .flex-container, 
  .flex-container ul {
-    flex-direction: row;}}
+    flex-direction: column;}}
+
+ @media all and (min-width: 600px) {
+ .flex-container, 
+ .flex-container ul {
+    flex-direction: row;
+    text-align: center;}}
 
 @media all and (min-width: 550px) {
 .header {flex-wrap: wrap;}
@@ -141,8 +147,10 @@ p {text-align: center;}
 	.resume-container {flex-shrink: }
 }
 
+/*CONTACTS */
 
 .contacts {box-align: center;}
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -209,6 +217,14 @@ p {text-align: center;}
   	padding: .5rem 0;
   	text-align: center;}
 
+/* IDM*/
+.wrapper-idm {
+	max-width: 750px; 
+	margin: 0 auto;}
+.wrapper-idm img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;}
 /*.wrapper-dragon {
     float: left; 
     margin: 20px 20px 20px 20px;}
