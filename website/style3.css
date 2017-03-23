@@ -46,7 +46,6 @@ align-items: center;
 	height: 51px;
 	font-weight: 300;
 	letter-spacing:.3px;
-	font-size: 20px
 	color:black;
 	display: flex;
     font-family: Century gothic, CenturyGothic, AppleGothic,sans-serif;
@@ -160,7 +159,7 @@ p {text-align: center;}
 
 /*CONTACTS */
 
-.contacts {box-align: center;}
+
 
 .fa {
     padding: 20px;
@@ -173,10 +172,9 @@ p {text-align: center;}
     color: white;
 	display: -webkit-box;
  	display: -moz-box;
-  	display: box;
     -webkit-box-align: center;
     -moz-box-align: center;
-    box-align: center;}
+    }
 
 
 
