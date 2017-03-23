@@ -49,7 +49,7 @@ align-items: center;
 	font-size: 20px
 	color:black;
 	display: flex;
-
+    font-family: Century gothic, CenturyGothic, AppleGothic,sans-serif;
 	-webkit-flex-direction: column;
 	flex-direction: column;
 }
@@ -66,17 +66,17 @@ align-items: center;
 
 .flex-container ul li a{
 	padding: 10px;
-	color: black;
+	color: #009598;
 	text-decoration: none;
 	
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 630px) {
  .flex-container, 
  .flex-container ul {
     flex-direction: column;}}
 
- @media all and (min-width: 600px) {
+ @media all and (min-width: 630px) {
  .flex-container, 
  .flex-container ul {
     flex-direction: row;
@@ -89,11 +89,7 @@ align-items: center;
 a:hover:not(.active) {background-color: white}
 .active {background-color: #4caf50;}
 
-.parent {
 
-background-color: orange;
-
-}
 
 h2 {text-align: center;}
 
@@ -101,10 +97,27 @@ h3 {text-align: center;}
 
 p {text-align: center;}
 
-.parenttwo {background-color: purple}
+/* DREXEL. No colors when in mobile */
 
+.container-paperone {
+	max-width: 750px;
+	background-color: #EAF1FB;
+	margin: 0 auto;
+	padding: 20px 20px 20px 20px;}
 
-.parentthree {background-color: green}
+.container-papertwo {
+	max-width: 750px;
+	background-color: #EFEDFC;
+	margin: 30px auto;
+	padding: 20px 20px 20px 20px;}
+
+.container-paperthree {
+	max-width: 750px;
+	background-color: #DBF0F7;
+	margin: 30px auto;
+	padding: 20px 20px 20px 20px;}
+
+/* DEFAULT */
 
 .wrapper-image {
     float: left; 
@@ -219,12 +232,38 @@ p {text-align: center;}
 
 /* IDM*/
 .wrapper-idm {
-	max-width: 750px; 
+	max-width: 750px;
+	color: #71143D;
 	margin: 0 auto;}
 .wrapper-idm img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;}
+
+/* COOP */
+
+.container-description {
+	max-width: 750px;
+	color: #71143D;
+	margin: 40px auto 75px auto;
+}
+
+
+.container-articles {
+	 max-width: 750px;
+	 margin: 0 auto;
+}
+
+/* RESUME */
+.container-resume h3 {
+	text-align: left;
+}
+.container-resume p {
+	text-align: left;
+}
+.upper {
+	color: #71143D; 
+}
 /*.wrapper-dragon {
     float: left; 
     margin: 20px 20px 20px 20px;}
